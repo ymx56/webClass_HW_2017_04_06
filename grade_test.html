@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>成績及不及格</title>
+	<script type="text/javascript">
+		function test()
+		{
+			var gra = parseInt(document.getElementById('grade').value);
+			if(gra < 60)
+				document.getElementById('res').innerHTML = "不及格";
+			else
+				document.getElementById('res').innerHTML = "及格";
+
+		}
+	</script>
+</head>
+<body>
+	<label for="grade">Input your grade:</label>
+	<input type="text" id="grade" name="grade"><br>
+	<button onclick="test()">test it</button><br>
+	<p id="res"></p>
+</body>
+</html>
